@@ -1,0 +1,99 @@
+@media print {
+  @page {
+    size: A4;
+  }
+  body {
+    font-size: 9pt;
+    background-color: white;
+    padding: 0;
+  }
+  .wrapper {
+    max-width: 100%;
+  }
+
+  //   img.avatar {
+  //     filter: grayscale(1);
+  //     -webkit-filter: greyscale(1);
+  //   }
+  .main-wrapper .time {
+    padding: 10px 30px 10px 10px;
+    //  float: right;
+    //  color: black !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .sidebar-wrapper {
+    position: static;
+    //  float: right;
+    //  width: 40%;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .remove-container.container-block {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .skillset,
+  .container-block {
+    break-inside: avoid;
+  }
+
+  .skillset .level-bar-inner {
+    background-color: $theme-color !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+   .fa-inverse,
+   .fa-inverse:after,
+   .fa-inverse:before {
+     color: #ffffff !important;
+   }
+
+    /* Hide buttons when printing */
+    .print-button,
+    .pdf-button,
+    .d-print-none {
+        display: none !important;
+    }
+  
+  /* Force desktop layout for printing */
+  .wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  
+  .sidebar-wrapper {
+    width: 280px !important;
+    position: static !important;
+    float: left !important;
+    display: block !important;
+  }
+  
+  .main-wrapper {
+    width: calc(100% - 280px) !important;
+    margin-left: 0 !important;
+    float: right !important;
+  }
+  
+  /* Ensure desktop layout is used when printing */
+  @media (max-width: 767px) {
+    .wrapper {
+      display: flex !important;
+      flex-direction: row !important;
+    }
+    
+    .sidebar-wrapper {
+      width: 280px !important;
+      position: static !important;
+      float: left !important;
+    }
+    
+    .main-wrapper {
+      width: calc(100% - 280px) !important;
+      margin-left: 0 !important;
+    }
+  }
+}

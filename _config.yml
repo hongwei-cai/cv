@@ -1,12 +1,12 @@
 #Update all the sections by editing the data.yml file inside _data folder.
 
 # Site Settings
-title: Vincent Cai's Resume
-url: 'https://github.com/hongwei-cai/resume'
+title: Vincent Cai's CV
+url: 'https://github.com/hongwei-cai/cv'
 
 #change it according to your repository name
 # disabling since we are using a custom domain
-baseurl: '/resume'
+baseurl: '/cv'
 
 # description: A beautiful Jekyll theme for creating resume
 # Style will be applied only after restarting the build or serve. Just choose one of the options.

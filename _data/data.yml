@@ -233,21 +233,23 @@ recommendations:
 skills:
   title: Technical Skills
   toolset:
-  - name: Python & Machine Learning
+  - name: Python &amp; Machine Learning
     level: 90%
   
-  - name: C#/.NET & DevOps
+  - name: Deep Learning (PyTorch, TensorFlow)
     level: 85%
-    
+
   - name: Data Science (Pandas, NumPy, Scikit-learn)
     level: 85%
-  
-  - name: Deep Learning (PyTorch, TensorFlow)
+
+  - name: C#/.NET &amp; DevOps
+    level: 75%
+    
+  - name: CI/CD &amp; DevOps
     level: 80%
     
   - name: Cloud Platforms (Azure, AWS)
     level: 75%
-
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

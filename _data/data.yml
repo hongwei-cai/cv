@@ -9,8 +9,8 @@ sidebar:
 
   # Profile information
   name: Vincent Cai
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  tagline: Machine Learning Engineer
+  avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: h.vincent.cai@gmail.com
@@ -37,38 +37,38 @@ sidebar:
   honors:
     title: Awards & Fellowships
     info:
-    - title: Marcus Bach Graduate Fellowship
-      link: https://clas.uiowa.edu/academics/graduate-education/funding/marcus-bach-graduate-fellowships
-      organization: University of Iowa
-      time: 2023
+      - title: Marcus Bach Graduate Fellowship
+        link: https://clas.uiowa.edu/academics/graduate-education/funding/marcus-bach-graduate-fellowships
+        organization: University of Iowa
+        time: 2023
 
-    - title: Graduate College Summer Fellowship  
-      organization: University of Iowa
-      time: 2021
+      - title: Graduate College Summer Fellowship  
+        organization: University of Iowa
+        time: 2021
 
-    - title: Henry and Parker Pelzer Fellowship Award (2-times Composer of the Year)
-      organization: University of Iowa
-      time: 2017 & 2019
+      - title: Henry and Parker Pelzer Fellowship Award (Two-times Composer of the Year)
+        organization: University of Iowa
+        time: 2017 & 2019
 
-    - title: Graduate Music Talent Scholarship
-      organization: Oklahoma City University
-      time: 2013-2015
+      - title: Graduate Music Talent Scholarship
+        organization: Oklahoma City University
+        time: 2013-2015
 
-    - title: Won first place for the biannual Piano Competition
-      organization: Shenyang Conservatory of Music
-      time: 2010
+      - title: Won first place for the biannual Piano Competition
+        organization: Shenyang Conservatory of Music
+        time: 2010
 
-    - title: SYCM Merit Scholarship
-      organization: Shenyang Conservatory of Music
-      time: 2009-2011
+      - title: SYCM Merit Scholarship
+        organization: Shenyang Conservatory of Music
+        time: 2009-2011
 
   strengths:
-    title: Strength
+    title: Strengths
     info:
-      - item: Professional skills in machine learning and deep learning
-      - item: Interdisciplinary problem-solving ability
-      - item: Teamwork and technical guidance experience
-      - item: The ability to quickly learn new technologies
+      - item: Machine learning and AI algorithm implementation
+      - item: Large language model (LLM) expertise
+      - item: Interdisciplinary problem-solving skills
+      - item: Team collaboration and practical delivery
 
   languages:
     title: Languages
@@ -82,22 +82,22 @@ sidebar:
   interests:
     title: Interests
     info:
-    - item: Group Fitness
-    - item: Reading
-    - item: Swimming
+    - item: Fitness
     - item: Tennis
+    - item: Reading
     - item: Piano
+    - item: Music Composition
 
 career-profile:
   title: Career Profile
   summary: |
-    Full-stack developer with a Master's degree in Computer Science from the University of Iowa (GPA 3.74/4.00). 
-    
-    Experienced in machine learning, AI, and software development with hands-on experience as a Software Engineering Intern at Casey's Store Support Center, where I led the .NET 8 upgrade project and gained expertise in CI/CD and DevOps practices.
-    
-    Specialized in Python, machine learning algorithms, medical image analysis, and deep learning. Successfully completed AI projects including aortic valve diagnosis systems using nnU-Net, automatic speech recognition, and MRI synthesis with CycleGAN.
-    
-    Seeking full-time positions in machine learning and Data Science.
+    M.S. in Computer Science from the University of Iowa, specializing in large language model (LLM/Transformer) research and industry applications, with strengths in both algorithm innovation and engineering implementation. Proficient in PyTorch and deep learning frameworks, experienced in the full LLM development lifecycle—including pretraining, fine-tuning (LoRA/PEFT), RLHF optimization, knowledge augmentation (RAG/Prompt Engineering), and distributed training/inference acceleration.
+
+    Software Engineering Intern at Casey's Store Support Center (U.S.), led .NET 8 system upgrades and enterprise data platform performance optimization, implementing DevOps and CI/CD pipelines to enhance development efficiency and system stability.
+
+    Extensive AI project experience, including medical image analysis, automatic speech recognition, and multimodal data processing, covering the entire pipeline from data cleaning and model design to training, optimization, and deployment, with strong end-to-end problem-solving skills.
+
+    Adept at integrating AI technologies with business scenarios to drive practical adoption (e.g., healthcare, retail), with strong cross-team collaboration and product-oriented mindset. <strong>Seeking roles in LLM application development, training, or evaluation</strong>, dedicated to solving real-world business challenges and creating sustainable value with AI.
 
 education:
   title: Education
@@ -105,11 +105,11 @@ education:
   - degree: M.S., Computer Science
     university: University of Iowa
     time: 2023 - 2025
-    details: |
-      Coursework: Machine Learning | Applied Machine Learning | Artificial Intelligence
-      Database Systems | Operating Systems | Algorithms | Human-Computer Interaction
-      - Graduate Teaching Assistant
-      - GPA: 3.74/4.00
+    # details: |
+    #   Coursework: Machine Learning | Applied Machine Learning | Artificial Intelligence
+    #   Database Systems | Operating Systems | Algorithms | Human-Computer Interaction
+    #   - Graduate Teaching Assistant
+    #   - GPA: 3.74/4.00
 
   - degree: Ph.D., Music Composition
     university: University of Iowa  
@@ -127,7 +127,7 @@ experiences:
   title: Experience
   info:
     - role: Graduate Teaching Assistant
-      time: 2023 - Present
+      time: Jan 2023 - May 2025
       company: University of Iowa, Computer Science Department
       details: |
         - Teaching assistant for core CS courses: Artificial Intelligence, Data Structures, Programming Languages, Computer Organization
@@ -188,6 +188,20 @@ projects:
       
       Tech Stack: PyTorch, MONAI, 3D Slicer
 
+  - title: Netflix Data Wrangling, Exploratory Analysis, and Metadata Enrichment
+    link: "https://github.com/hongwei-cai/Netflix-Data-Wrangling-Exploration-Metadata-Enrichment"
+    tagline: |
+      Performed missing value imputation, duplicate removal, and field standardization using Pandas/NumPy. Visualized content type distribution, country/region release trends, and age rating correlations with Matplotlib/Seaborn/Plotly to extract key business insights. Integrated external ratings (IMDB, Rotten Tomatoes) via OMDb API and enriched data dimensions through feature engineering (genre tags, region mapping). Achieved high predictive performance.
+      
+      Tech Stack: Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly), data cleaning and preprocessing, EDA visualization, API integration (OMDb), feature engineering, Jupyter Notebook
+
+  - title: Image Super-Resolution Enhancement Based on EDSR
+    link: "#"
+    tagline: |
+      Reimplemented the Enhanced Deep Super-Resolution (EDSR) model with modular residual blocks to improve single-scale image resolution. Demonstrated significant detail restoration improvements over traditional methods (SRCNN, SRResNet).
+      
+      Tech Stack: PyTorch, EDSR architecture, residual learning
+
 
 # oss:
 #   title: OSS Contributions
@@ -233,21 +247,18 @@ recommendations:
 skills:
   title: Technical Skills
   toolset:
-  - name: Python & Machine Learning
-    level: 90%
   
-  - name: C#/.NET & DevOps
+  - name: Deep Learning & AI (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, Bert, GPT, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
     level: 85%
-    
-  - name: Data Science (Pandas, NumPy, Scikit-learn)
-    level: 85%
-  
-  - name: Deep Learning (PyTorch, TensorFlow)
-    level: 80%
-    
-  - name: Cloud Platforms (Azure, AWS)
+
+  - name: Data analysis & Visualization (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
+    level: 70%
+
+  - name: Programming & Development Tools (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
     level: 75%
 
+  - name: Cloud Platforms & DevOps (Azure, AWS)
+    level: 65%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

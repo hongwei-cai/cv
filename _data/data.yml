@@ -126,16 +126,8 @@ education:
 experiences:
   title: Experience
   info:
-    - role: Graduate Teaching Assistant
-      time: Jan 2023 - May 2025
-      company: University of Iowa, Computer Science Department
-      details: |
-        - Teaching assistant for core CS courses: Artificial Intelligence, Data Structures, Programming Languages, Computer Organization
-        - Instructed 100+ students in machine learning algorithms, neural networks, and programming languages (Java, C, Haskell)
-        - Conducted lab sessions and office hours, improving student comprehension and course performance
-
     - role: Software Engineering Intern
-      time: May 2024 - Aug 2024
+      time: 2024.05 - 2024.08
       company: Casey's Store Support Center
       details: |
         - Led .NET 8 upgrade project for 12 Commerce Integration Platform applications, completing ahead of .NET 6 end-of-life deadline
@@ -143,6 +135,13 @@ experiences:
         - Conducted API testing using Postman and managed infrastructure through ServiceNow ticketing system
         - Gained exposure to data science workflows and cybersecurity practices through cross-team collaboration
 
+    - role: Graduate Teaching Assistant
+      time: 2023.01 - 2025.05
+      company: University of Iowa, Computer Science Department
+      details: |
+        - Teaching assistant for core CS courses: Artificial Intelligence, Data Structures, Programming Languages, Computer Organization
+        - Instructed 100+ students in machine learning algorithms, neural networks, and programming languages (Java, C, Haskell)
+        - Conducted lab sessions and office hours, improving student comprehension and course performance
 
 # certifications:
 #   title: Certifications
@@ -166,7 +165,62 @@ experiences:
 
 projects:
   title: Projects
+  intro: >
+    Below are some of my key projects demonstrating my skills in machine learning, AI, and software development. Each project highlights my ability to tackle complex problems, implement effective solutions, and deliver impactful results.
   assignments:
+  - title: Multimodal Enterprise Knowledge Management Agent
+    link: "https://github.com/hongwei-cai/RapidAoV"
+    tagline: |
+      <strong>Project Overview</strong><br><br>
+      A multimodal AI agent built on a Retrieval-Augmented Generation (RAG) architecture to address information silos in enterprise knowledge management. By integrating private document repositories, the system delivers accurate Q&A, knowledge reasoning, and multimodal retrieval to boost decision-making efficiency and knowledge utilization. The project follows agile practices, has completed core iterations, and supports efficient local deployment for enterprise use cases.<br><br>
+
+      <strong>Core Iterations</strong><br>
+      <ul>
+      <li><strong>Sprint 1 (Completed): End-to-end Text Q&A Pipeline</strong>
+        <ul>
+        <li>Implemented intelligent PDF parsing and chunking with a sliding-window strategy and overlapping segments</li>
+        <li>Integrated ChromaDB vector database and used BAAI/bge-m3 for semantic embeddings and retrieval</li>
+        <li>Deployed DialoGPT-medium on a local vLLM server for efficient inference</li>
+        <li>Developed FastAPI endpoints for document upload, Q&A queries, and error handling</li>
+        <li>Containerized services using Docker and Docker Compose for production-grade orchestration</li>
+        </ul>
+      </li>
+      <li><strong>Sprint 2 (Completed): Model Customization & Performance Optimization</strong>
+        <ul>
+        <li>Implemented a LoRA fine-tuning framework to optimize models (e.g., DialoGPT-medium), reducing trainable parameters by 99.67%</li>
+        <li>Integrated the PEFT library and enabled quantization-friendly optimizations for M1 Pro (4-bit/8-bit) and improved memory management</li>
+        <li>Built an MLflow experiment tracking system with a SQLite backend to log model metrics and resource usage</li>
+        <li>Developed an A/B testing framework to compare model versions and support dynamic switching</li>
+        <li>Implemented model caching and hot-swap mechanisms, improving inference latency by ~29.1%</li>
+        </ul>
+      </li>
+      <li><strong>Sprint 3 (In Progress): Productionization & Multimodal Expansion</strong>
+        <ul>
+        <li>Integrated CLIP for image encoding and cross-modal retrieval to support mixed text-image queries</li>
+        <li>Extended ChromaDB to store multimodal embeddings for joint text-image retrieval</li>
+        <li>Designed multimodal prompt templates to improve context fusion and inference quality</li>
+        <li>Architected a production-grade asynchronous service with request queuing and load balancing</li>
+        </ul>
+      </li>
+      </ul><br>
+
+      <strong>Tech Stack</strong><br>
+      <ul>
+      <li><strong>AI/ML Frameworks</strong>: PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
+      <li><strong>Core Models</strong>: BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
+      <li><strong>Data & Retrieval</strong>: ChromaDB, PyPDF, intelligent text chunking, multimodal embeddings</li>
+      <li><strong>Backend & Deployment</strong>: FastAPI, Docker, Docker Compose, GitHub Actions</li>
+      <li><strong>Experimentation & Ops</strong>: MLflow, Pydantic, quantization tooling</li>
+      </ul><br>
+
+      <strong>Key Achievements</strong><br>
+      <ul>
+      <li><strong>System Architecture</strong>: Designed and implemented a complete RAG pipeline covering document parsing, vector retrieval, LLM inference, and service deployment, capable of handling enterprise-scale document volumes (PDF support with smart chunking to ensure retrieval accuracy)</li>
+      <li><strong>Performance Improvements</strong>: Applied LoRA fine-tuning and quantization to reduce DialoGPT-medium trainable parameters from 354M to 1.18M (≈99.7% parameter efficiency) and improved inference latency by ~29.1% while maintaining answer quality (validated with MLflow experiments)</li>
+      <li><strong>Engineering Practices</strong>: Established standardized development workflows including pre-commit checks, type annotations (mypy), and unit test coverage to improve collaboration and maintainability</li>
+      <li><strong>Business Impact</strong>: Delivered accurate document understanding (answer accuracy >85%), enabled secure local deployment to mitigate data privacy risks, and provided an effective enterprise knowledge management solution</li>
+      </ul>
+
   - title: Aortic Valve Insufficiency Diagnosis System
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
@@ -255,7 +309,7 @@ skills:
     level: 70%
 
   - name: Programming & Development Tools (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
-    level: 75%
+    level: 85%
 
   - name: Cloud Platforms & DevOps (Azure, AWS)
     level: 65%

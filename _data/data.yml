@@ -9,13 +9,13 @@ sidebar:
 
   # Profile information
   name: Vincent Cai
-  tagline: Machine Learning Engineer
+  tagline: Prompt Engineer
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: h.vincent.cai@gmail.com
-  phone: +1 424-888-2757
-  timezone: America/New_York # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  email: 18545031257@163.com
+  phone: +86 18545031257
+  timezone: Asia/Shanghai # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: China
   website: https://hongweicai.com/ # Include the full website URL, including "http://" or "https://".
   linkedin: hongwei-cai
@@ -66,7 +66,7 @@ sidebar:
     title: Strengths
     info:
       - item: Machine learning and AI algorithm implementation
-      - item: Large language model (LLM) expertise
+      - item: Large language model expertise
       - item: Interdisciplinary problem-solving skills
       - item: Team collaboration and practical delivery
 
@@ -91,13 +91,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    M.S. in Computer Science from the University of Iowa, specializing in large language model (LLM/Transformer) research and industry applications, with strengths in both algorithm innovation and engineering implementation. Proficient in PyTorch and deep learning frameworks, experienced in the full LLM development lifecycle—including pretraining, fine-tuning (LoRA/PEFT), RLHF optimization, knowledge augmentation (RAG/Prompt Engineering), and distributed training/inference acceleration.
-
-    Software Engineering Intern at Casey's Store Support Center (U.S.), led .NET 8 system upgrades and enterprise data platform performance optimization, implementing DevOps and CI/CD pipelines to enhance development efficiency and system stability.
-
-    Extensive AI project experience, including medical image analysis, automatic speech recognition, and multimodal data processing, covering the entire pipeline from data cleaning and model design to training, optimization, and deployment, with strong end-to-end problem-solving skills.
-
-    Adept at integrating AI technologies with business scenarios to drive practical adoption (e.g., healthcare, retail), with strong cross-team collaboration and product-oriented mindset. <strong>Seeking roles in LLM application development, training, or evaluation</strong>, dedicated to solving real-world business challenges and creating sustainable value with AI.
+    Focused on the reliable deployment and interpretable reasoning of LLMs in healthcare, with hands-on expertise in prompt engineering, RAG optimization, AI safety and risk control, and context engineering. Adept at structuring clinical reasoning into executable AI inference workflows to build secure, compliant, and high-accuracy digital clinician systems. Combines full-stack engineering capabilities with strong product sense, committed to addressing high-impact clinical challenges through trustworthy AI.
 
 education:
   title: Education
@@ -105,11 +99,8 @@ education:
   - degree: M.S., Computer Science
     university: University of Iowa
     time: 2023 - 2025
-    # details: |
-    #   Coursework: Machine Learning | Applied Machine Learning | Artificial Intelligence
-    #   Database Systems | Operating Systems | Algorithms | Human-Computer Interaction
-    #   - Graduate Teaching Assistant
-    #   - GPA: 3.74/4.00
+    details: |
+      - Graduate Teaching Assistant
 
   - degree: Ph.D., Music Composition
     university: University of Iowa  
@@ -126,6 +117,15 @@ education:
 experiences:
   title: Experience
   info:
+    - role: Prompt Engineer
+      time: 2025.12 - current
+      company: Chengdu Huaxi Digital Medical Technology Co., Ltd
+      details: |
+        - Structured Medical Reasoning: Translated clinical diagnostic logic (e.g., SOAP) into modular prompt templates. Engineered a "Question-Hypothesis-Reflection-Verification" closed-loop to enhance the digital doctor agent's reasoning accuracy and output explainability in complex medical tasks, effectively reducing hallucinations.
+        - Safety & Risk Mitigation: Designed multi-level safety guardrails (e.g., Refusal templates, checklists) and risk mitigation strategies to ensure the safety and compliance of medical dialogues, effectively preventing bias and misinformation.
+        - Contextual Engineering Integration: Deeply integrated prompt engineering with context management, handling instruction hierarchies, tool result injection, and session state. Defined requirements for retrieval/memory systems to optimize recall coverage and relevance, ensuring efficient information injection.
+        - Full-cycle Optimization: Led an AI-assisted prompt development workflow (Self-Generate/Evaluate/Reflect) and established a PromptOps framework for automated evaluation and regression testing. Drove a data-driven closed-loop (Metrics-Issues-Fixes) to enhance R&D efficiency and quality traceability.
+
     - role: Software Engineering Intern
       time: 2024.05 - 2024.08
       company: Casey's Store Support Center
@@ -168,58 +168,67 @@ projects:
   intro: >
     Below are some of my key projects demonstrating my skills in machine learning, AI, and software development. Each project highlights my ability to tackle complex problems, implement effective solutions, and deliver impactful results.
   assignments:
-  - title: Multimodal Enterprise Knowledge Management Agent
+  # - title: Multimodal Enterprise Knowledge Management Agent
+  #   link: "https://github.com/hongwei-cai/RapidAoV"
+  #   tagline: |
+  #     <strong>Project Overview</strong><br><br>
+  #     A multimodal AI agent built on a Retrieval-Augmented Generation (RAG) architecture to address information silos in enterprise knowledge management. By integrating private document repositories, the system delivers accurate Q&A, knowledge reasoning, and multimodal retrieval to boost decision-making efficiency and knowledge utilization. The project follows agile practices, has completed core iterations, and supports efficient local deployment for enterprise use cases.<br><br>
+
+  #     <strong>Core Iterations</strong><br>
+  #     <ul>
+  #     <li><strong>Sprint 1 (Completed): End-to-end Text Q&A Pipeline</strong>
+  #       <ul>
+  #       <li>Implemented intelligent PDF parsing and chunking with a sliding-window strategy and overlapping segments</li>
+  #       <li>Integrated ChromaDB vector database and used BAAI/bge-m3 for semantic embeddings and retrieval</li>
+  #       <li>Deployed DialoGPT-medium on a local vLLM server for efficient inference</li>
+  #       <li>Developed FastAPI endpoints for document upload, Q&A queries, and error handling</li>
+  #       <li>Containerized services using Docker and Docker Compose for production-grade orchestration</li>
+  #       </ul>
+  #     </li>
+  #     <li><strong>Sprint 2 (Completed): Model Customization & Performance Optimization</strong>
+  #       <ul>
+  #       <li>Implemented a LoRA fine-tuning framework to optimize models (e.g., DialoGPT-medium), reducing trainable parameters by 99.67%</li>
+  #       <li>Integrated the PEFT library and enabled quantization-friendly optimizations for M1 Pro (4-bit/8-bit) and improved memory management</li>
+  #       <li>Built an MLflow experiment tracking system with a SQLite backend to log model metrics and resource usage</li>
+  #       <li>Developed an A/B testing framework to compare model versions and support dynamic switching</li>
+  #       <li>Implemented model caching and hot-swap mechanisms, improving inference latency by ~29.1%</li>
+  #       </ul>
+  #     </li>
+  #     <li><strong>Sprint 3 (In Progress): Productionization & Multimodal Expansion</strong>
+  #       <ul>
+  #       <li>Integrated CLIP for image encoding and cross-modal retrieval to support mixed text-image queries</li>
+  #       <li>Extended ChromaDB to store multimodal embeddings for joint text-image retrieval</li>
+  #       <li>Designed multimodal prompt templates to improve context fusion and inference quality</li>
+  #       <li>Architected a production-grade asynchronous service with request queuing and load balancing</li>
+  #       </ul>
+  #     </li>
+  #     </ul><br>
+
+  #     <strong>Tech Stack</strong><br>
+  #     <ul>
+  #     <li><strong>AI/ML Frameworks</strong>: PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
+  #     <li><strong>Core Models</strong>: BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
+  #     <li><strong>Data & Retrieval</strong>: ChromaDB, PyPDF, intelligent text chunking, multimodal embeddings</li>
+  #     <li><strong>Backend & Deployment</strong>: FastAPI, Docker, Docker Compose, GitHub Actions</li>
+  #     <li><strong>Experimentation & Ops</strong>: MLflow, Pydantic, PyTest, quantization tooling</li>
+  #     </ul><br>
+
+  #     <strong>Key Achievements</strong><br>
+  #     <ul>
+  #     <li><strong>System Architecture</strong>: Designed and implemented a complete RAG pipeline covering document parsing, vector retrieval, LLM inference, and service deployment, capable of handling enterprise-scale document volumes (PDF support with smart chunking to ensure retrieval accuracy)</li>
+  #     <li><strong>Performance Improvements</strong>: Applied LoRA fine-tuning and quantization to reduce DialoGPT-medium trainable parameters from 354M to 1.18M (≈99.7% parameter efficiency) and improved inference latency by ~29.1% while maintaining answer quality (validated with MLflow experiments)</li>
+  #     <li><strong>Engineering Practices</strong>: Established standardized development workflows including pre-commit checks, type annotations (mypy), and unit test coverage to improve collaboration and maintainability</li>
+  #     <li><strong>Business Impact</strong>: Delivered accurate document understanding (answer accuracy >85%), enabled secure local deployment to mitigate data privacy risks, and provided an effective enterprise knowledge management solution</li>
+  #     </ul>
+
+
+  - title: Medical-Expert Card System
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-      <strong>Project Overview</strong><br><br>
-      A multimodal AI agent built on a Retrieval-Augmented Generation (RAG) architecture to address information silos in enterprise knowledge management. By integrating private document repositories, the system delivers accurate Q&A, knowledge reasoning, and multimodal retrieval to boost decision-making efficiency and knowledge utilization. The project follows agile practices, has completed core iterations, and supports efficient local deployment for enterprise use cases.<br><br>
+      Based on clinical logic, this initiative designs algorithm-guided prompt engineering to construct a generalizable system of physician experience cards. The system aims to structurally extract diagnostic reasoning, treatment preferences, and implicit heuristic rules from medical records. By integrating medical knowledge graphs and belief state machines, it enhances the interpretability, safety, and generalization capabilities of Large Language Models (LLMs) in healthcare scenarios.
+      
+      Tech Stack: LangChain, Pydantic, Streamlit, Milvus Lite, Algorithmic Prompting, Clinical Reasoning State Machine, Domain Knowledge Injection
 
-      <strong>Core Iterations</strong><br>
-      <ul>
-      <li><strong>Sprint 1 (Completed): End-to-end Text Q&A Pipeline</strong>
-        <ul>
-        <li>Implemented intelligent PDF parsing and chunking with a sliding-window strategy and overlapping segments</li>
-        <li>Integrated ChromaDB vector database and used BAAI/bge-m3 for semantic embeddings and retrieval</li>
-        <li>Deployed DialoGPT-medium on a local vLLM server for efficient inference</li>
-        <li>Developed FastAPI endpoints for document upload, Q&A queries, and error handling</li>
-        <li>Containerized services using Docker and Docker Compose for production-grade orchestration</li>
-        </ul>
-      </li>
-      <li><strong>Sprint 2 (Completed): Model Customization & Performance Optimization</strong>
-        <ul>
-        <li>Implemented a LoRA fine-tuning framework to optimize models (e.g., DialoGPT-medium), reducing trainable parameters by 99.67%</li>
-        <li>Integrated the PEFT library and enabled quantization-friendly optimizations for M1 Pro (4-bit/8-bit) and improved memory management</li>
-        <li>Built an MLflow experiment tracking system with a SQLite backend to log model metrics and resource usage</li>
-        <li>Developed an A/B testing framework to compare model versions and support dynamic switching</li>
-        <li>Implemented model caching and hot-swap mechanisms, improving inference latency by ~29.1%</li>
-        </ul>
-      </li>
-      <li><strong>Sprint 3 (In Progress): Productionization & Multimodal Expansion</strong>
-        <ul>
-        <li>Integrated CLIP for image encoding and cross-modal retrieval to support mixed text-image queries</li>
-        <li>Extended ChromaDB to store multimodal embeddings for joint text-image retrieval</li>
-        <li>Designed multimodal prompt templates to improve context fusion and inference quality</li>
-        <li>Architected a production-grade asynchronous service with request queuing and load balancing</li>
-        </ul>
-      </li>
-      </ul><br>
-
-      <strong>Tech Stack</strong><br>
-      <ul>
-      <li><strong>AI/ML Frameworks</strong>: PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
-      <li><strong>Core Models</strong>: BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
-      <li><strong>Data & Retrieval</strong>: ChromaDB, PyPDF, intelligent text chunking, multimodal embeddings</li>
-      <li><strong>Backend & Deployment</strong>: FastAPI, Docker, Docker Compose, GitHub Actions</li>
-      <li><strong>Experimentation & Ops</strong>: MLflow, Pydantic, quantization tooling</li>
-      </ul><br>
-
-      <strong>Key Achievements</strong><br>
-      <ul>
-      <li><strong>System Architecture</strong>: Designed and implemented a complete RAG pipeline covering document parsing, vector retrieval, LLM inference, and service deployment, capable of handling enterprise-scale document volumes (PDF support with smart chunking to ensure retrieval accuracy)</li>
-      <li><strong>Performance Improvements</strong>: Applied LoRA fine-tuning and quantization to reduce DialoGPT-medium trainable parameters from 354M to 1.18M (≈99.7% parameter efficiency) and improved inference latency by ~29.1% while maintaining answer quality (validated with MLflow experiments)</li>
-      <li><strong>Engineering Practices</strong>: Established standardized development workflows including pre-commit checks, type annotations (mypy), and unit test coverage to improve collaboration and maintainability</li>
-      <li><strong>Business Impact</strong>: Delivered accurate document understanding (answer accuracy >85%), enabled secure local deployment to mitigate data privacy risks, and provided an effective enterprise knowledge management solution</li>
-      </ul>
 
   - title: Aortic Valve Insufficiency Diagnosis System
     link: "https://github.com/hongwei-cai/RapidAoV"
@@ -249,13 +258,6 @@ projects:
       
       Tech Stack: Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly), data cleaning and preprocessing, EDA visualization, API integration (OMDb), feature engineering, Jupyter Notebook
 
-  - title: Image Super-Resolution Enhancement Based on EDSR
-    link: "#"
-    tagline: |
-      Reimplemented the Enhanced Deep Super-Resolution (EDSR) model with modular residual blocks to improve single-scale image resolution. Demonstrated significant detail restoration improvements over traditional methods (SRCNN, SRResNet).
-      
-      Tech Stack: PyTorch, EDSR architecture, residual learning
-
 
 # oss:
 #   title: OSS Contributions
@@ -268,47 +270,39 @@ projects:
 
 
 publications:
-  title: Publications
-  intro: |
-    The following are the works I have published during my academic research period, covering research achievements in fields such as computer science and music composition.
-  papers:
-  - title: "Rapid Diagnosis of Aortic Valve Insufficiency in Aortic Root Enlargement"
-    link: "#"
-    authors: Cindy Chiu, Hongwei Cai
-
   - title: "Path to the third pole: for sinfonietta"
     link: "https://doi.org/10.25820/etd.006913"
     authors: Hongwei Cai
     conference: University of Iowa, Autumn 2023
 
-recommendations:
-  title: Recommendations
-  list:
-  - person: Dean Rottinghaus
-    email: dean.rottinghaus@caseys.com
-    # phone: 
-    role: Software Engineering Manager
-    recommendation:
-      "During his internship at Casey's Support Center, Vincent demonstrated outstanding technical skills and team spirit. Through his efforts, we successfully completed the .NET 8 technical debt project and improved the platform's stability and performance."
+# recommendations:
+#   title: Recommendations
+#   list:
+#   - person: Dean Rottinghaus
+#     email: dean.rottinghaus@caseys.com
+#     # phone: 
+#     role: Software Engineering Manager
+#     recommendation:
+#       "During his internship at Casey's Support Center, Vincent demonstrated outstanding technical skills and team spirit. Through his efforts, we successfully completed the .NET 8 technical debt project and improved the platform's stability and performance."
 
-  - person: Sami Damanhoury
-    email: sami.damanhoury@caseys.com
-    # phone: 
-    role: Casey's Software Engineer
-    recommendation:
-      "Vincent is a very diligent and easy-going person. He has excellent learning ability and always maintains a humble and cautious work attitude."
+#   - person: Sami Damanhoury
+#     email: sami.damanhoury@caseys.com
+#     # phone: 
+#     role: Casey's Software Engineer
+#     recommendation:
+#       "Vincent is a very diligent and easy-going person. He has excellent learning ability and always maintains a humble and cautious work attitude."
 
 skills:
   title: Technical Skills
   toolset:
   
-  - name: Deep Learning & AI (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, GANs, Bert, GPT, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
+  - name: Deep Learning & AI (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
     level: 85%
 
   - name: Data analysis & Visualization (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
     level: 70%
 
-  - name: Programming & Development Tools (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD, Scrapy, Selenium, BeautifulSoup)
+  - name: Programming & Development Tools (Python, C#/.NET, C++, Bash, Java, JavaScript, React, HTML/CSS, Git, Docker, CI/CD)
     level: 85%
 
   - name: Cloud Platforms & DevOps (Azure, AWS)

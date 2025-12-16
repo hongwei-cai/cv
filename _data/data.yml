@@ -119,7 +119,7 @@ experiences:
   info:
     - role: Prompt Engineer
       time: 2025.12 - current
-      company: Chengdu Huaxi Digital Medical Technology Co., Ltd
+      company: Huaxi Digital Medical Technology Co., Ltd, Chengdu, China
       details: |
         - Structured Medical Reasoning: Translated clinical diagnostic logic (e.g., SOAP) into modular prompt templates. Engineered a "Question-Hypothesis-Reflection-Verification" closed-loop to enhance the digital doctor agent's reasoning accuracy and output explainability in complex medical tasks, effectively reducing hallucinations.
         - Safety & Risk Mitigation: Designed multi-level safety guardrails (e.g., Refusal templates, checklists) and risk mitigation strategies to ensure the safety and compliance of medical dialogues, effectively preventing bias and misinformation.
@@ -128,16 +128,17 @@ experiences:
 
     - role: Software Engineering Intern
       time: 2024.05 - 2024.08
-      company: Casey's Store Support Center
+      company: Casey's Store Support Center, USA
       details: |
         - Led .NET 8 upgrade project for 12 Commerce Integration Platform applications, completing ahead of .NET 6 end-of-life deadline
+        - Skilled in Agile development practices; actively contribute to Scrum meetings and collaborate effectively across all stages of the SDLC
         - Implemented CI/CD pipelines and DevOps practices, improving deployment efficiency
-        - Conducted API testing using Postman and managed infrastructure through ServiceNow ticketing system
+        - Conducted end-to-end API testing and managed infrastructure through ServiceNow ticketing system
         - Gained exposure to data science workflows and cybersecurity practices through cross-team collaboration
 
     - role: Graduate Teaching Assistant
       time: 2023.01 - 2025.05
-      company: University of Iowa, Computer Science Department
+      company: University of Iowa, Computer Science Department, USA
       details: |
         - Teaching assistant for core CS courses: Artificial Intelligence, Data Structures, Programming Languages, Computer Organization
         - Instructed 100+ students in machine learning algorithms, neural networks, and programming languages (Java, C, Haskell)

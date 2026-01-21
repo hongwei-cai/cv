@@ -13,7 +13,7 @@ sidebar:
   avatar: profile.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: 18545031257@163.com
+  email: caihongwei@huaxishuyi.com
   phone: +86 18545031257
   timezone: Asia/Shanghai # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: China
@@ -82,8 +82,11 @@ sidebar:
   interests:
     title: Interests
     info:
-    - item: Fitness
-    - item: Tennis
+    - item: Powerlifting
+    - item: Archery
+    - item: IPSC/IDPA
+    - item: Skiing
+    - item: Climbing
     - item: Reading
     - item: Piano
     - item: Music Composition
@@ -105,6 +108,8 @@ education:
   - degree: Ph.D., Music Composition
     university: University of Iowa  
     time: 2016 - 2023
+    details: |
+      - Graduate Research Assistant
     
   - degree: M.M., Music Composition
     university: Oklahoma City University
@@ -121,10 +126,10 @@ experiences:
       time: 2025.12 - current
       company: Huaxi Digital Medical Technology Co., Ltd, Chengdu, China
       details: |
-        - Structured Medical Reasoning: Translated clinical diagnostic logic (e.g., SOAP) into modular prompt templates. Engineered a "Question-Hypothesis-Reflection-Verification" closed-loop to enhance the digital doctor agent's reasoning accuracy and output explainability in complex medical tasks, effectively reducing hallucinations.
-        - Safety & Risk Mitigation: Designed multi-level safety guardrails (e.g., Refusal templates, checklists) and risk mitigation strategies to ensure the safety and compliance of medical dialogues, effectively preventing bias and misinformation.
-        - Contextual Engineering Integration: Deeply integrated prompt engineering with context management, handling instruction hierarchies, tool result injection, and session state. Defined requirements for retrieval/memory systems to optimize recall coverage and relevance, ensuring efficient information injection.
-        - Full-cycle Optimization: Led an AI-assisted prompt development workflow (Self-Generate/Evaluate/Reflect) and established a PromptOps framework for automated evaluation and regression testing. Drove a data-driven closed-loop (Metrics-Issues-Fixes) to enhance R&D efficiency and quality traceability.
+        - **Digital Doctor Enablement:** Spearheaded the development of a "Digital Doctor Agent" by digitizing real-world physician experience from Electronic Health Records (EHR) into computable assets.
+        - **Experience Extraction System:** Designed a 3-layer "Visit-Trajectory-Knowledge" experience card architecture to structure clinical logic, serving as the cognitive core for the agent's decision-making.
+        - **Safety & Evidence Control:** Implemented "Controlled RAG" with strict evidence citation, ensuring the agent's medical advice is traceable, fact-based, and free from hallucinations.
+        - **PromptOps Infrastructure:** Established a continuous evaluation and versioning pipeline (PromptOps) to iteratively improve the agent's reasoning accuracy in complex diagnostic scenarios.
 
     - role: Software Engineering Intern
       time: 2024.05 - 2024.08
@@ -169,95 +174,71 @@ projects:
   intro: >
     Below are some of my key projects demonstrating my skills in machine learning, AI, and software development. Each project highlights my ability to tackle complex problems, implement effective solutions, and deliver impactful results.
   assignments:
-  # - title: Multimodal Enterprise Knowledge Management Agent
-  #   link: "https://github.com/hongwei-cai/RapidAoV"
-  #   tagline: |
-  #     <strong>Project Overview</strong><br><br>
-  #     A multimodal AI agent built on a Retrieval-Augmented Generation (RAG) architecture to address information silos in enterprise knowledge management. By integrating private document repositories, the system delivers accurate Q&A, knowledge reasoning, and multimodal retrieval to boost decision-making efficiency and knowledge utilization. The project follows agile practices, has completed core iterations, and supports efficient local deployment for enterprise use cases.<br><br>
-
-  #     <strong>Core Iterations</strong><br>
-  #     <ul>
-  #     <li><strong>Sprint 1 (Completed): End-to-end Text Q&A Pipeline</strong>
-  #       <ul>
-  #       <li>Implemented intelligent PDF parsing and chunking with a sliding-window strategy and overlapping segments</li>
-  #       <li>Integrated ChromaDB vector database and used BAAI/bge-m3 for semantic embeddings and retrieval</li>
-  #       <li>Deployed DialoGPT-medium on a local vLLM server for efficient inference</li>
-  #       <li>Developed FastAPI endpoints for document upload, Q&A queries, and error handling</li>
-  #       <li>Containerized services using Docker and Docker Compose for production-grade orchestration</li>
-  #       </ul>
-  #     </li>
-  #     <li><strong>Sprint 2 (Completed): Model Customization & Performance Optimization</strong>
-  #       <ul>
-  #       <li>Implemented a LoRA fine-tuning framework to optimize models (e.g., DialoGPT-medium), reducing trainable parameters by 99.67%</li>
-  #       <li>Integrated the PEFT library and enabled quantization-friendly optimizations for M1 Pro (4-bit/8-bit) and improved memory management</li>
-  #       <li>Built an MLflow experiment tracking system with a SQLite backend to log model metrics and resource usage</li>
-  #       <li>Developed an A/B testing framework to compare model versions and support dynamic switching</li>
-  #       <li>Implemented model caching and hot-swap mechanisms, improving inference latency by ~29.1%</li>
-  #       </ul>
-  #     </li>
-  #     <li><strong>Sprint 3 (In Progress): Productionization & Multimodal Expansion</strong>
-  #       <ul>
-  #       <li>Integrated CLIP for image encoding and cross-modal retrieval to support mixed text-image queries</li>
-  #       <li>Extended ChromaDB to store multimodal embeddings for joint text-image retrieval</li>
-  #       <li>Designed multimodal prompt templates to improve context fusion and inference quality</li>
-  #       <li>Architected a production-grade asynchronous service with request queuing and load balancing</li>
-  #       </ul>
-  #     </li>
-  #     </ul><br>
-
-  #     <strong>Tech Stack</strong><br>
-  #     <ul>
-  #     <li><strong>AI/ML Frameworks</strong>: PyTorch, Transformers, PEFT (LoRA), vLLM, sentence-transformers</li>
-  #     <li><strong>Core Models</strong>: BAAI/bge-m3, BAAI/bge-large-zh, DialoGPT-medium, Phi-2, CLIP</li>
-  #     <li><strong>Data & Retrieval</strong>: ChromaDB, PyPDF, intelligent text chunking, multimodal embeddings</li>
-  #     <li><strong>Backend & Deployment</strong>: FastAPI, Docker, Docker Compose, GitHub Actions</li>
-  #     <li><strong>Experimentation & Ops</strong>: MLflow, Pydantic, PyTest, quantization tooling</li>
-  #     </ul><br>
-
-  #     <strong>Key Achievements</strong><br>
-  #     <ul>
-  #     <li><strong>System Architecture</strong>: Designed and implemented a complete RAG pipeline covering document parsing, vector retrieval, LLM inference, and service deployment, capable of handling enterprise-scale document volumes (PDF support with smart chunking to ensure retrieval accuracy)</li>
-  #     <li><strong>Performance Improvements</strong>: Applied LoRA fine-tuning and quantization to reduce DialoGPT-medium trainable parameters from 354M to 1.18M (≈99.7% parameter efficiency) and improved inference latency by ~29.1% while maintaining answer quality (validated with MLflow experiments)</li>
-  #     <li><strong>Engineering Practices</strong>: Established standardized development workflows including pre-commit checks, type annotations (mypy), and unit test coverage to improve collaboration and maintainability</li>
-  #     <li><strong>Business Impact</strong>: Delivered accurate document understanding (answer accuracy >85%), enabled secure local deployment to mitigate data privacy risks, and provided an effective enterprise knowledge management solution</li>
-  #     </ul>
-
-
-  - title: Medical-Expert Card System
-    link: "https://github.com/hongwei-cai/RapidAoV"
+  - title: Medical AI Data Pipeline & Expert System
+    link: "https://github.com/hongwei-cai/Medical-AI-Data-Pipeline"
     tagline: |
-      Based on clinical logic, this initiative designs algorithm-guided prompt engineering to construct a generalizable system of physician experience cards. The system aims to structurally extract diagnostic reasoning, treatment preferences, and implicit heuristic rules from medical records. By integrating medical knowledge graphs and belief state machines, it enhances the interpretability, safety, and generalization capabilities of Large Language Models (LLMs) in healthcare scenarios.
-      
-      Tech Stack: LangChain, Pydantic, Streamlit, Milvus Lite, Algorithmic Prompting, Clinical Reasoning State Machine, Domain Knowledge Injection
+      Engineered a comprehensive Medical AI system enabling unified processing of heterogeneous patient data (Excel & Medical Images) via a robust ETL pipeline. Delivered the full-stack MVP in 3 hours, demonstrating rapid prototyping capabilities.
+      <ul>
+      <li><strong>Rapid Prototyping</strong>: Delivered the full-stack MVP (ETL, Backend, UI) in 3 hours.</li>
+      <li><strong>RAG Engine</strong>: Integrated ChromaDB and LangChain for semantic retrieval and real-time analytics.</li>
+      <li><strong>Unified Processing</strong>: Enabled processing of heterogeneous patient data including Excel and Medical Images.</li>
+      </ul>
+      <strong>Tech Stack</strong>: Python, LangChain, Streamlit, ChromaDB, RAG, Qwen-Max/VL, Pandas, Plotly
+
+ 
+  - title: Medical-Expert Card System
+    link: "https://github.com/hongwei-cai/md-expert-card-system"
+    tagline: |
+      Built a generalizable physician experience card system to resolve "black box" and "hallucination" issues in medical LLMs. Implemented a "Visit-Trajectory-Knowledge" three-layer architecture for structured clinical data extraction.
+      <ul>
+      <li><strong>Three-Layer Architecture</strong>: Extracts VisitCard, TrajectoryCard, and KnowledgeCard from unstructured EHRs.</li>
+      <li><strong>Controlled RAG</strong>: Features Deterministic Indexing and Hybrid Retrieval for strict evidence citation.</li>
+      <li><strong>Algorithm-Guided</strong>: Utilizes prompt engineering to generate temporal disease progression trajectories.</li>
+      </ul>
+      <strong>Tech Stack</strong>: LangChain (LCEL), Pydantic, Milvus, Streamlit, Python, Pytest
 
 
   - title: Aortic Valve Insufficiency Diagnosis System
     link: "https://github.com/hongwei-cai/RapidAoV"
     tagline: |
-      Developed automated diagnosis system using nnU-Net for 3D medical image segmentation and XGBoost for risk classification. Achieved improved early detection accuracy through radiomic feature analysis and morphological assessment.
-      
-      Tech Stack: Python, nnU-Net, XGBoost, PyRadiomics, SimpleITK
+      Developed an automated diagnosis system combining 3D medical image segmentation and risk classification for improved early detection.
+      <ul>
+      <li><strong>3D Segmentation</strong>: Utilized nnU-Net for precise segmentation of medical images.</li>
+      <li><strong>Risk Classification</strong>: Implemented XGBoost model for accurate risk assessment.</li>
+      <li><strong>Feature Analysis</strong>: Enhanced accuracy through radiomic feature analysis and morphological assessment.</li>
+      </ul>
+      <strong>Tech Stack</strong>: Python, nnU-Net, XGBoost, PyRadiomics, SimpleITK
 
   - title: Automatic Speech Recognition System
     link: "https://github.com/hongwei-cai/ASR-System"
     tagline: |
-      Built ASR system using deep neural networks with CTC loss, implementing Viterbi decoding and beam search optimization for improved transcription accuracy.
-      
-      Tech Stack: Python, NumPy, Kaldi
+      Built an Automatic Speech Recognition (ASR) system using deep neural networks to improve transcription accuracy.
+      <ul>
+      <li><strong>Deep Learning</strong>: Implemented DNNs with CTC loss for acoustic modeling.</li>
+      <li><strong>Optimization</strong>: Applied Viterbi decoding and beam search for decoding optimization.</li>
+      </ul>
+      <strong>Tech Stack</strong>: Python, NumPy, Kaldi
 
   - title: Cross-Modality MRI Synthesis
     link: "https://github.com/hongwei-cai/Cross-Modality-MRI-Synthesis-with-CycleGANs"
     tagline: |
-      Implemented CycleGAN architecture for T1/T2 MRI modality translation, enabling enhanced medical imaging workflows.
-      
-      Tech Stack: PyTorch, MONAI, 3D Slicer
+      Implemented CycleGAN architecture for medical image modality translation to enhance imaging workflows.
+      <ul>
+      <li><strong>Modality Translation</strong>: Achieved high-quality T1/T2 MRI translation.</li>
+      <li><strong>Workflow Enhancement</strong>: Enabled better analysis through synthetic data generation.</li>
+      </ul>
+      <strong>Tech Stack</strong>: PyTorch, MONAI, 3D Slicer
 
   - title: Netflix Data Wrangling, Exploratory Analysis, and Metadata Enrichment
     link: "https://github.com/hongwei-cai/Netflix-Data-Wrangling-Exploration-Metadata-Enrichment"
     tagline: |
-      Performed missing value imputation, duplicate removal, and field standardization using Pandas/NumPy. Visualized content type distribution, country/region release trends, and age rating correlations with Matplotlib/Seaborn/Plotly to extract key business insights. Integrated external ratings (IMDB, Rotten Tomatoes) via OMDb API and enriched data dimensions through feature engineering (genre tags, region mapping). Achieved high predictive performance.
-      
-      Tech Stack: Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly), data cleaning and preprocessing, EDA visualization, API integration (OMDb), feature engineering, Jupyter Notebook
+      Performed comprehensive data wrangling, visualization, and enrichment on Netflix datasets to extract key business insights.
+      <ul>
+      <li><strong>Data Cleaning</strong>: Handled missing values, duplicates, and standardization using Pandas/NumPy.</li>
+      <li><strong>Visual Insights</strong>: Visualized trends and correlations with Matplotlib/Seaborn/Plotly.</li>
+      <li><strong>Data Enrichment</strong>: Integrated external ratings via OMDb API and performed feature engineering.</li>
+      </ul>
+      <strong>Tech Stack</strong>: Python (Pandas, NumPy, Matplotlib, Seaborn, Plotly), OMDb API, Jupyter Notebook
 
 
 # oss:
@@ -297,7 +278,7 @@ skills:
   title: Technical Skills
   toolset:
   
-  - name: Deep Learning & AI (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, LLMs, PEFT, LoRA, RLHF, NLP, Hugging Face, LangChain, RAG, Prompt Engineering, MCP, CV)
+  - name: Deep Learning & AI (PyTorch, Scikit-learn, XGBoost, CNN, RNN, Transformers, LLMs, PEFT, LoRA, RLHF, LangChain, RAG, Prompt Engineering, MCP, NLP, CV)
     level: 85%
 
   - name: Data analysis & Visualization (SQL, Pandas, NumPy, MatPlotLib, Seaborn, Plotly, Jupyter Notebook, Excel)
